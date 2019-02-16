@@ -1,0 +1,13 @@
+@extends('layouts.app')
+
+@section('content')
+
+<div class="container">
+
+@if(\Session::has('error'))
+
+<div class="alert alert-danger">
+
+{{\Session::get('error')}}
+
+</div>
